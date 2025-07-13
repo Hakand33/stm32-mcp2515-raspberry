@@ -19,16 +19,6 @@ This project enables a Raspberry Pi to control a servo motor based on incoming C
 - MCP2515 CAN module (external, sends CAN messages via STM32)
 - GPIO17 → Servo PWM control
 
-## Wiring Diagram
-MCP2515 | STM32 (SPI1) | Raspberry Pi  
---------------------------------  
-VCC    | 3.3V         | 3.3V  
-GND    | GND          | GND  
-CS     | PA4          | GPIO8 (CE0)  
-SCK    | PA5          | GPIO11 (SCLK)  
-SI     | PA7          | GPIO10 (MOSI)  
-SO     | PA6          | GPIO9 (MISO)  
-
 ## Project Highlights
 
 - CAN Bus communication between STM32 and Raspberry Pi via MCP2515
