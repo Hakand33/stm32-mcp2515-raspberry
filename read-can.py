@@ -20,7 +20,7 @@ def set_angle(angle):
     servo.ChangeDutyCycle(duty)
     print(f"Servo > {angle} (duty: {duty:.2f})")
     
-print("UART Dinleniyor...")
+print("UART Dinleniyor")
 
 
 try:
