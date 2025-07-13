@@ -38,6 +38,15 @@ Located at: `rpi/can_servo_control.py`
   - `5A` → `90°`
   - `B4` → `180°`
 - Uses PWM on GPIO17 (BCM) to control servo
+- 
+- ## STM32 Code
+
+| File Name       | Description                                                                                     
+| `main.c`        | Main application file. CAN message transmission via MCP2515 is implemented here.                
+| `main.h`        | Header file. Contains function prototypes and global definitions.                              
+| `mcp2515.c`     | Contains MCP2515 SPI communication functions. Basic commands such as RESET, READ, WRITE, RTS, BIT_MODIFY are defined here. 
+| `mcp2515.h`     | Contains MCP2515 register addresses, command constants, and function prototypes.                
+| `retarget.c`    | Redirects output functions like `printf()` to UART for debugging purposes.              
 
 ## Run Instructions:
 ```bash
